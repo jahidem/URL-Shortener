@@ -4,7 +4,7 @@ const FeaturesSection = () => {
   return (
     <Box
       w='100%'
-      p='7.4rem 0 0 0'>
+      p='7.4rem 0 7.4rem 0'>
       <Box
         maxW='1200px'
         mx='auto'

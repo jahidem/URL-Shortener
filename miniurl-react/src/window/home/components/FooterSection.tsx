@@ -5,7 +5,8 @@ const FooterSection = () => {
     <Flex
       w='100%'
       justifyContent='space-between'
-      p='2.4rem 2.4rem 1rem 2.4rem'>
+      p='1rem 2.4rem 1rem 2.4rem'
+      bgColor='white'>
       <Box>
         <Text fontSize='1.4rem'>&copy;2023 Jahidem. All rights reserved.</Text>
       </Box>
