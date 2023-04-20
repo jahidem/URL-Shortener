@@ -4,41 +4,34 @@ import oceanwater from '../../../assets/wate.jpg';
 const LandingSection = () => {
   return (
     <Flex
-      justify='space-between'
-      bgImg={oceanwater}
-      py='5.6rem'
-      fontFamily='Inter, sans-serif'
-      px='5.4rem'>
+      justify='center'
+      bg='linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );'
+      p='7.4rem'
+      fontFamily='Inter, sans-serif'>
       <Box
-        maxW='700px'
-        p='1.6rem'>
+        pl='2.4rem'
+        maxW='1333px'>
         <Text
-          fontSize='5.4rem'
+          textAlign='center'
+          fontSize='6.4rem'
           fontFamily='Epilogue, sans-serif'
           fontWeight='800'
           color='white'
-          textShadow='1px 1px 5px blue'>
+          letterSpacing='-2px'
+          lineHeight='9.6rem'>
           Make it short, Make it quick!
         </Text>
-        <Text
-          pl='1.6rem'
-          py='1.6rem'
-          fontWeight='500'
-          fontSize='1.8rem'>
-          Have a long URL which is tedious to even copy and paste? Shorten your
-          URL and also get statistics about how much engaging is it!
-        </Text>
-        <Text
-          pl='1.6rem'
-          fontWeight='400'
-          fontSize='1.8rem'
-          color='white'>
-          Paste your URL here and get a mini URL that makes it more engaging and
-          flow like waves.
-        </Text>
-      </Box>
-      <Box>
-        <Text color='white'>Your URL here</Text>
+        <Box maxW='960px'>
+          <Text
+            py='1.6rem'
+            fontWeight='500'
+            fontSize='1.8rem'
+            lineHeight='150%'
+            color='white'
+            textAlign='center'>
+             Do you have a lengthy URL that's hard to copy and paste? shorten the URL and get statistics on how much interest it has! paste your URL here and get a miniURL that's more interactive and flows.
+          </Text>
+        </Box>
       </Box>
     </Flex>
   );
