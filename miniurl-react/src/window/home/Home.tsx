@@ -2,6 +2,7 @@ import NavSection from './components/NavSection';
 import LandingSection from './components/LandingSection';
 import { Box } from '@chakra-ui/react';
 import TextArea from './components/TextArea';
+import FeaturesSection from './components/FeaturesSection';
 const Home = () => {
   return (
     <>
@@ -10,9 +11,7 @@ const Home = () => {
       <Box position='absolute' mt='-35px'>
         <TextArea/>
       </Box>
-      <Box bgColor='#F3F3F4' h='400px'>
-
-      </Box>
+      <FeaturesSection/>
     </>
   );
 };
