@@ -18,6 +18,12 @@ def create_new_minurl():
 
 
 class UrlPair(models.Model):
+    '''
+        A dataModel of UrlPair having attrbutes:
+                            -- original_url (user given long url)
+                            -- mini_url (sever generated short url)
+                            -- visit_count (count number of time short url visited)
+    '''
     original_url = models.CharField(max_length=500)
     mini_url = models.CharField(
         max_length=100,
