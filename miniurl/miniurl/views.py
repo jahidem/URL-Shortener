@@ -39,7 +39,7 @@ def miniurl_detail(request, mini_url_id):
     except:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
-    serializer = UrlPairSerializer(urlpair, many=True)
+    serializer = UrlPairSerializer(urlpair)
     return Response(serializer.data)
 
 
