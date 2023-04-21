@@ -4,7 +4,6 @@ import LandingSection from './components/LandingSection';
 import TextArea from './components/TextArea';
 import FeaturesSection from './components/FeaturesSection';
 import FooterSection from './components/FooterSection';
-import StatisticsSection from './components/StatisticsSection';
 const Home = () => {
   return (
     <>
@@ -16,7 +15,6 @@ const Home = () => {
         <TextArea />
       </Box>
       <FeaturesSection />
-      <StatisticsSection />
       <FooterSection />
     </>
   );

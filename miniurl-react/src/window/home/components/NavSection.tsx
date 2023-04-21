@@ -1,10 +1,11 @@
 import { Flex, Box, Text, Button } from '@chakra-ui/react';
-
+import repeat from '../../../assets/repeat.jpg'
 const NavSection = () => {
   return (
     <Box
       maxW='1333px'
-      mx='auto'>
+      mx='auto'
+      >
       <Flex
         height='73px'
         alignItems='center'
@@ -20,7 +21,8 @@ const NavSection = () => {
               MiniURL
             </Text>
           </Box>
-          <Flex ml='5.4rem'>
+        </Flex>
+        <Flex ml='5.4rem'>
             <Box>
               <Text fontSize='1.8rem'
               cursor='pointer'
@@ -41,31 +43,6 @@ const NavSection = () => {
               </Text>
             </Box>
           </Flex>
-        </Flex>
-        <Flex alignItems='center'>
-          <Box mr='1.6rem'>
-            <Text
-              p='0.8rem 1.6rem'
-              color='rgb(36, 51, 90)'
-              letterSpacing='.25px'
-              fontSize='1.6rem'
-              fontWeight='600'>
-              Log in
-            </Text>
-          </Box>
-          <Box
-            fontSize='1.6rem'
-            bgColor='rgb(0, 105, 255)'
-            color='white'
-            borderRadius='9px'
-            fontWeight='600'>
-            <Text
-              p='0.8rem 2rem'
-              textAlign='center'>
-              Sign up
-            </Text>
-          </Box>
-        </Flex>
       </Flex>
     </Box>
   );

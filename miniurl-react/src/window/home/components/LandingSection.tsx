@@ -6,7 +6,7 @@ const LandingSection = () => {
     <Flex
       justify='center'
       bg='linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );'
-      p='7.4rem'
+      p='8.4rem'
       fontFamily='Inter, sans-serif'>
       <Box
         pl='2.4rem'

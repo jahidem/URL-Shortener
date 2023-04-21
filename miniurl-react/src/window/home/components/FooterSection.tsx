@@ -5,8 +5,7 @@ const FooterSection = () => {
     <Flex
       w='100%'
       justifyContent='space-between'
-      p='1rem 2.4rem 1rem 2.4rem'
-      bgColor='white'>
+      p='1rem 2.4rem 1rem 2.4rem'>
       <Box>
         <Text fontSize='1.4rem'>&copy;2023 Jahidem. All rights reserved.</Text>
       </Box>
@@ -15,7 +14,10 @@ const FooterSection = () => {
           href='https://github.com/jahidem'
           isExternal>
           <Flex alignItems='center'>
-            <FiGithub color='blue' fontSize='16px'/>
+            <FiGithub
+              color='blue'
+              fontSize='16px'
+            />
             <Text
               ml='.5rem'
               fontSize='1.4rem'
