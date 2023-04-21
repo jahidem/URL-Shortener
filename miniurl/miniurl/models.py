@@ -1,5 +1,5 @@
 from django.db import models
-from .utilities import generate_random_string, LIVE_SERVER_URL
+from .utilities import generate_random_string
 
 
 def create_new_minurl():
@@ -11,7 +11,7 @@ def create_new_minurl():
         new_miniurl = generate_random_string(8)
         if not UrlPair.objects.filter(mini_url=new_miniurl):
             not_unique = False
-    return LIVE_SERVER_URL + new_miniurl
+    return new_miniurl
 
 
 # need a model to store a original_url and miniurl pair
@@ -20,7 +20,7 @@ def create_new_minurl():
 class UrlPair(models.Model):
     original_url = models.CharField(max_length=500)
     mini_url = models.CharField(
-        max_length=20,
+        max_length=100,
         blank=True,
         editable=False,
         unique=True,
