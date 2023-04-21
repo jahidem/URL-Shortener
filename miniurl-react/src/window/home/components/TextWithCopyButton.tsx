@@ -8,7 +8,7 @@ import {
 
 import { FiCopy } from 'react-icons/fi';
 
-const TextWithCopyButton = ({ textToShow, textTitle }) => {
+const TextWithCopyButton = ({ textToShow, textTitle, titleWidth='95px' }) => {
   return (
     <>
       <Box>
@@ -19,7 +19,7 @@ const TextWithCopyButton = ({ textToShow, textTitle }) => {
             children={textTitle}
             fontSize='1.6rem'
             p='1.8rem'
-            w='95px'
+            w={titleWidth}
           />
           <Input
             value={textToShow}

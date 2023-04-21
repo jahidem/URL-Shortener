@@ -1,17 +1,17 @@
-import { Flex, Box, Text, Button } from '@chakra-ui/react';
-import repeat from '../../../assets/repeat.jpg'
+import { Flex, Box, Text, Link } from '@chakra-ui/react';
+import { Link as RouteLink } from 'react-router-dom';
+import repeat from '../../../assets/repeat.jpg';
 const NavSection = () => {
   return (
     <Box
       maxW='1333px'
-      mx='auto'
-      >
+      mx='auto'>
       <Flex
         height='73px'
         alignItems='center'
         justifyContent='space-between'>
         <Flex alignItems='center'>
-          <Box>
+          <RouteLink to='/home'>
             <Text
               pt='5px'
               color='rgb(0, 105, 255)'
@@ -20,29 +20,37 @@ const NavSection = () => {
               fontWeight='800'>
               MiniURL
             </Text>
-          </Box>
+          </RouteLink>
         </Flex>
         <Flex ml='5.4rem'>
-            <Box>
-              <Text fontSize='1.8rem'
+          <RouteLink to='/stats'>
+            <Text
+              fontSize='1.8rem'
               cursor='pointer'
               color='rgba(36, 51, 125,0.95)'
               fontWeight='500'
-              >
-                Statistics
-              </Text>
-            </Box>
+              _hover={{
+                'text-decoration': 'underline',
+              }}>
+              Statistics of URL
+            </Text>
+          </RouteLink>
 
-            <Box ml='3.6rem'>
-              <Text fontSize='1.8rem'
+          <Box ml='3.6rem'>
+            <Link isExternal href='https://github.com/jahidem/URL-Shortener'>
+            <Text
+              fontSize='1.8rem'
               cursor='pointer'
               color='rgba(36, 51, 125,0.95)'
               fontWeight='500'
-              >
-                About
-              </Text>
-            </Box>
-          </Flex>
+              _hover={{
+                'text-decoration': 'underline',
+              }}>
+              About
+            </Text>
+            </Link>
+          </Box>
+        </Flex>
       </Flex>
     </Box>
   );
