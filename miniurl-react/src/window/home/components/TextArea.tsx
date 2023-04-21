@@ -10,15 +10,20 @@ const TextArea = () => {
   const [currUrlInputState, setCurrUrlInputState] = useState<UrlInputState>(
     UrlInputState.INPUTTING
   );
-  const [invalidMeddage, setInvalidMessage] = useState<string>('');
+  const [invalidMessage, setInvalidMessage] = useState<string>('');
   const [triggerSubmit, setTriggerSubmit] = useState<boolean>(false);
-
-  useEffect(() => {}, [invalidMeddage]);
+  const [triggerInvalid, setTriggerInvalid] = useState<boolean>(false);
+  useEffect(() => {
+    if (invalidMessage) console.log(invalidMessage);
+  }, [triggerInvalid]);
   const redirectToStatPage = (response) => {
     console.log(response);
     setCurrUrlInputState(UrlInputState.INPUTTING);
     //if(response.staus == 201)
-      
+  };
+  const makeInvalid = (message: string) => {
+    setInvalidMessage(message);
+    setTriggerInvalid((state) => !state);
   };
   useEffect(() => {
     if (currUrlInputState == UrlInputState.SUBMITTING) {
@@ -28,7 +33,7 @@ const TextArea = () => {
         })
         .then((response) => redirectToStatPage(response))
         .catch((error) => {
-          setInvalidMessage("Couldn't reach the server");
+          makeInvalid("Couldn't connext to server");
           setCurrUrlInputState(UrlInputState.INPUTTING);
         });
     }
@@ -38,10 +43,7 @@ const TextArea = () => {
     if (validateUrl(urlInput)) {
       setCurrUrlInputState(UrlInputState.SUBMITTING);
       setTriggerSubmit((state) => !state);
-    } else {
-      setInvalidMessage('Invalid URL format');
-      setCurrUrlInputState(UrlInputState.INPUTTING);
-    }
+    } else makeInvalid('Invalid URL format');
   };
 
   return (
@@ -70,7 +72,6 @@ const TextArea = () => {
               e.key === 'Enter' &&
               UrlInputState.INPUTTING == currUrlInputState
             ) {
-              setCurrUrlInputState(UrlInputState.SUBMITTING);
               generateTinyUrl();
             }
           }}
@@ -91,7 +92,6 @@ const TextArea = () => {
             p='0.5rem'
             onClick={() => {
               if (UrlInputState.INPUTTING == currUrlInputState) {
-                setCurrUrlInputState(UrlInputState.SUBMITTING);
                 generateTinyUrl();
               }
             }}
