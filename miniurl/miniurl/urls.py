@@ -20,6 +20,6 @@ from miniurl import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('urls/', views.miniurl_list)
-    #path('urls/<str:id>', views.handle_miniurl)
+    path('urls/', views.miniurl_list),
+    path('<str:mini_url_id>', views.miniurl_redirect),
 ]
