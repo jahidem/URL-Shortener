@@ -14,12 +14,23 @@ from pathlib import Path
 import os
 import dj_database_url
 from dotenv import load_dotenv
-
+import unipath
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+BDIR =  unipath.Path(__file__).ancestor(2)
 load_dotenv(BASE_DIR / '.env')
 
+
+STATIC_ROOT      =  BDIR.child('static')
+
+TEMPLATE_DIRS    = (
+    BDIR.child('templates'),
+)
+
+STATICFILES_DIRS = (
+    BDIR.child('miniurl').child('static'),
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -65,7 +76,6 @@ ROOT_URLCONF = 'miniurl.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,7 +134,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
