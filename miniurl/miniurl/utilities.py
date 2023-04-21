@@ -1,11 +1,14 @@
 import random
 import string
-import environ
+from dotenv import load_dotenv
+import os
+from pathlib import Path
 
-env = environ.Env()
-environ.Env.read_env()
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / '.env')
 
-LIVE_FRONTEND_SERVER_URL = env("LIVE_FRONTEND_SERVER_URL")
+
+LIVE_FRONTEND_SERVER_URL = os.getenv("LIVE_FRONTEND_SERVER_URL")
 
 
 def generate_random_string(length):
