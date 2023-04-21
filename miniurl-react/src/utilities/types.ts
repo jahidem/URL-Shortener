@@ -1,6 +1,7 @@
 export enum UrlInputState {
     INPUTTING,
     SUBMITTING,
+    SUCCESS
 }
 
 export type UrlPair = {

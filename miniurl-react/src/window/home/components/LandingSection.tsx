@@ -1,5 +1,4 @@
 import { Flex, Box, Text } from '@chakra-ui/react';
-import oceanwater from '../../../assets/wate.jpg';
 
 const LandingSection = () => {
   return (
