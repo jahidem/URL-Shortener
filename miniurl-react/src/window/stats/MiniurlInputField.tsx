@@ -33,7 +33,7 @@ const MiniurlInputField = ({ urlPair, setUrlPair, urlIdFromParam }) => {
         size='lg'
         colorScheme='red'>
         <InputLeftAddon
-          children='https://getminiurl.onrender.com/'
+          children='https://minifyurl.onrender.com/'
           fontSize='1.6rem'
           p='1.8rem'
           w='260px'
