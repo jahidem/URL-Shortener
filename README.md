@@ -30,6 +30,11 @@ Used Postman to make sure my API working properly. DBeaver is a  DB management a
 ### Deployment details
 The frontend site is hosted [here](https://getminiurl.onrender.com/). The backend hosted seperately [here](https://minifyurl.onrender.com/admin/). I used Render free instance  to host. so, After 15 minutes of inactivity the server automatically spuns down. If you are generating miniurl and server is spunned down it would take nearly **2~3 minutes** to respond, Please have patience!
 ### See recorded demonstration
+
+
+https://user-images.githubusercontent.com/54525656/233800795-22184365-dc75-432a-9df4-c9b03f6791fb.mp4
+
+
 ## How to run locally
 Frontend and backend completely seperated. You have to run them individually.
 #### Frontend
