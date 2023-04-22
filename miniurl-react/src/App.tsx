@@ -1,21 +1,40 @@
 import Home from './window/home/Home';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
+import Stat from './window/stats/Stat';
 
 const App = () => {
   return (
     <>
-    <style>{`
+      <style>
+        {`
     body{
       background-color : #F3F3F4;
     }
       `}
-    </style>
-      <BrowserRouter>
+      </style>
       <ChakraProvider>
-        <Home />
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path='/'
+              element={<Home />}
+            />
+            <Route
+              path='/home'
+              element={<Home />}
+            />
+            <Route
+              path='/:short_url_id/stats'
+              element={<Stat/>}
+            />
+            <Route
+              path='/stats'
+              element={<Stat/>}
+            />
+          </Routes>
+        </BrowserRouter>
       </ChakraProvider>
-    </BrowserRouter>
     </>
   );
 };

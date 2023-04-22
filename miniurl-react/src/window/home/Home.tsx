@@ -15,7 +15,7 @@ const Home = () => {
         <TextArea />
       </Box>
       <FeaturesSection />
-      <FooterSection/>
+      <FooterSection />
     </>
   );
 };
