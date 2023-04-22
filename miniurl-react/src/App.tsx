@@ -1,6 +1,5 @@
 import Home from './window/home/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react';
 import Stat from './window/stats/Stat';
 import { Navigate } from 'react-router-dom';
 const App = () => {
@@ -13,8 +12,6 @@ const App = () => {
     }
       `}
       </style>
-      <ChakraProvider>
-        <BrowserRouter>
           <Routes>
             <Route
               path='/'
@@ -42,8 +39,6 @@ const App = () => {
               }
             />
           </Routes>
-        </BrowserRouter>
-      </ChakraProvider>
     </>
   );
 };
