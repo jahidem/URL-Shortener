@@ -29,6 +29,7 @@ def miniurl_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(status=status.HTTP_400_BAD_REQUEST)
 
+
 @api_view(['GET'])
 def miniurl_detail(request, mini_url_id):
     '''
@@ -61,12 +62,9 @@ def miniurl_redirect(request, mini_url_id):
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
-        serializer = UrlPairSerializer(
-            urlpair, data={'urlpair.visit_count': urlpair.visit_count + 1})     # increament the visit count for this UrlPair
-        if serializer.is_valid():                                               # validate then save the changes
-            serializer.save()
-
-        # now  make the user browswe to redirect to the original url derived from the miniurl
+        urlpair.visit_count += 1  # increment the visit count
+        urlpair.save()
+        # now  make the user browse to redirect to the original url derived from the miniurl
         return HttpResponseRedirect(redirect_to=urlpair.original_url)
 
 
