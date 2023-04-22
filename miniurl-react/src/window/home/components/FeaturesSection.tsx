@@ -9,8 +9,8 @@ const FeaturesSection = () => {
         maxW='1200px'
         mx='auto'
         py='auto'>
-        <Flex justifyContent='space-between'>
-          <Box maxW='360px'>
+        <Flex justifyContent='space-between' flexWrap='wrap' >
+          <Box maxW='360px' p='1.6rem'>
             <Text
               fontSize='2.4em'
               fontFamily='Epilogue, sans-serif'
@@ -27,7 +27,7 @@ const FeaturesSection = () => {
               it is visited the most.
             </Text>
           </Box>
-          <Box maxW='360px'>
+          <Box maxW='360px' p='1.6rem'>
             <Text
               fontSize='2.4em'
               fontFamily='Epilogue, sans-serif'
