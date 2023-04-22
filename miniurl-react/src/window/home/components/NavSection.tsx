@@ -7,6 +7,7 @@ const NavSection = () => {
       maxW='1333px'
       mx='auto'>
       <Flex
+        px='3.6rem'
         height='73px'
         alignItems='center'
         justifyContent='space-between'>
