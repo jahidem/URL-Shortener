@@ -5,13 +5,7 @@ import { Navigate } from 'react-router-dom';
 const App = () => {
   return (
     <>
-      <style>
-        {`
-    body{
-      background-color : #F3F3F4;
-    }
-      `}
-      </style>
+      
           <Routes>
             <Route
               path='/'
