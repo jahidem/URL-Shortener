@@ -31,33 +31,25 @@ const StatOfMiniurl = ({ miniUrlId, urlPair, setUrlPair }) => {
               <TextWithCopyButton
                 textToShow={urlPair.original_url}
                 textTitle='Your URL'
-                titleWidth='260px'
+                titleWidth={['75px', '260px', '260px']}
               />
             </Box>
             <Flex
               alignSelf='center'
               mt='3.6rem'
-              alignItems='center'>
-              <Text
-                fontSize='2rem'
-                p='1.6rem'>
-                This MiniURL has been visited
-              </Text>
+              alignItems='center'
+              fontSize={['1.6rem', '1.8rem', '1.8rem']}>
+              <Text p='1.6rem'>This MiniURL has been visited</Text>
               <Box
                 bgColor='rgba(0, 105, 254,.25)'
                 borderRadius='9px'>
                 <Text
                   color='gray.600'
-                  fontSize='2rem'
                   p='0.2rem 1.6rem'>
                   {urlPair.visit_count}
                 </Text>
               </Box>
-              <Text
-                fontSize='2rem'
-                p='1.6rem'>
-                times!
-              </Text>
+              <Text p='1.6rem'>times!</Text>
             </Flex>
             <Flex
               alignSelf='center'
@@ -69,7 +61,7 @@ const StatOfMiniurl = ({ miniUrlId, urlPair, setUrlPair }) => {
                 cursor='pointer'
                 color='#32B9D4'
                 _hover={{
-                  transform: 'rotate(185deg)'
+                  transform: 'rotate(185deg)',
                 }}
                 transition='1s transform ease'
               />

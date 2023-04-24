@@ -34,14 +34,14 @@ const MiniurlInputField = ({ urlPair, setUrlPair, urlIdFromParam }) => {
         colorScheme='red'>
         <InputLeftAddon
           children='https://minifyurl.onrender.com/'
-          fontSize='1.6rem'
+          fontSize={['1.2rem','1.6rem','1.6rem']}
           p='1.8rem'
-          w='260px'
+          w={['190px','260px','260px']}
         />
         <Input
           value={urlPair.mini_url ? urlPair.mini_url : inputText}
           onChange={(e) => setInputText(e.target.value.replace(/\s/g, ''))}
-          fontSize='1.6rem'
+          fontSize={['1.2rem','1.6rem','1.6rem']}
           p='1.8rem'
           onKeyPress={(e) => {
             if (e.key === 'Enter') {

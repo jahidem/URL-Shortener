@@ -8,7 +8,7 @@ const NavSection = () => {
       mx='auto'>
       <Flex
         px='3.6rem'
-        height='73px'
+        height={['43px','73px','73px']}
         alignItems='center'
         justifyContent='space-between'>
         <Flex alignItems='center'>
@@ -16,7 +16,7 @@ const NavSection = () => {
             <Text
               pt='5px'
               color='rgb(0, 105, 255)'
-              fontSize='3rem'
+              fontSize={['1.8rem','3rem','3rem']}
               fontFamily='Epilogue, sans-serif'
               fontWeight='800'>
               MiniURL
@@ -26,12 +26,12 @@ const NavSection = () => {
         <Flex ml='5.4rem'>
           <RouteLink to='/stats'>
             <Text
-              fontSize='1.8rem'
+              fontSize={['1rem','1.8rem','1.8rem']}
               cursor='pointer'
               color='rgba(36, 51, 125,0.95)'
               fontWeight='500'
               _hover={{
-                'text-decoration': 'underline',
+                'textDecoration': 'underline',
               }}>
               Statistics of URL
             </Text>
@@ -40,12 +40,12 @@ const NavSection = () => {
           <Box ml='3.6rem'>
             <Link isExternal href='https://github.com/jahidem/URL-Shortener'>
             <Text
-              fontSize='1.8rem'
+              fontSize={['1rem','1.8rem','1.8rem']}
               cursor='pointer'
               color='rgba(36, 51, 125,0.95)'
               fontWeight='500'
               _hover={{
-                'text-decoration': 'underline',
+                'textDecoration': 'underline',
               }}>
               About
             </Text>
