@@ -11,11 +11,12 @@ const FeaturesSection = () => {
         py='auto'
         textAlign='center'>
         <Flex
+          px='1.6rem'
           justifyContent='space-between'
           alignItems='center'
-          flexDir={['column', 'row', 'row']}>
+          flexDir={['column', 'column', 'row']}>
           <Box
-            maxW='360px'
+            maxW='460px'
             p='1.6rem'>
             <Text
               fontSize={['1.8rem', '1.8rem', '2.4em']}
@@ -28,11 +29,12 @@ const FeaturesSection = () => {
               fontSize='1.6rem'
               fontFamily='Inter, sans-serif'
               m='1.2rem 0 0 0'>
-              Well, Make your URL shorter it makes way easier to manage and share.
+              Shorten your URL to simplify its management and facilitate
+              sharing.
             </Text>
           </Box>
           <Box
-            maxW='360px'
+            maxW='560px'
             p='1.6rem'>
             <Text
               fontSize={['1.8rem', '1.8rem', '2.4em']}
@@ -45,9 +47,10 @@ const FeaturesSection = () => {
               fontSize='1.6rem'
               fontFamily='Inter, sans-serif'
               m='1.2rem 0 0 0'>
-              Get to know how your URL is being used by people. For every
-              shotened URL you can see the frequency of visit also the time when
-              it is visited the most.
+              Gain insights into how your shortened URLs are being utilized by
+              tracking the number of visits they receive. This information can
+              help you understand the effectiveness of your marketing campaigns
+              or other initiatives.
             </Text>
           </Box>
         </Flex>

@@ -25,12 +25,11 @@ const LandingSection = () => {
           <Text
             py={['0.5rem', '0.5rem','1.6rem']}
             fontWeight='500'
-            fontSize={['1.4rem', '1.6rem','1.8rem']}
+            fontSize={['1.2rem', '1.6rem','1.8rem']}
             lineHeight='150%'
             color='white'
             textAlign='center'>
-             Do you have a lengthy URL that's hard to copy and paste? shorten the URL and get statistics on how much interest it has! paste your URL here and get a miniURL that's more interactive and flows.
-          </Text>
+Have you got a long URL that's difficult to copy and paste? Get statistics on how much interest it has by shortening the URL! Enter your URL here to obtain a miniURL that flows better and is more interactive          </Text>
         </Box>
       </Box>
     </Flex>

@@ -71,7 +71,7 @@ const TextArea = () => {
         <Flex
           w='640px'
           borderRadius='13px'
-          h={currUrlInputState == UrlInputState.SUCCESS ? '128px' : '64px'}
+          h={currUrlInputState == UrlInputState.SUCCESS ? '128px' : ['48px','64px','64px']}
           p='1.6rem'
           mx='1.6rem'
           bgColor='white'
@@ -121,7 +121,7 @@ const TextArea = () => {
                 px='1.8rem'
                 variant='unstyled'
                 placeholder='Paste your URL here to Minify'
-                fontSize='1.6rem'
+                fontSize={['1.2rem','1.6rem','1.6rem']}
                 bgColor='white'
                 h='100%'
                 value={urlInput}

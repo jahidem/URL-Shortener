@@ -31,7 +31,7 @@ const NavSection = () => {
               color='rgba(36, 51, 125,0.95)'
               fontWeight='500'
               _hover={{
-                'text-decoration': 'underline',
+                'textDecoration': 'underline',
               }}>
               Statistics of URL
             </Text>
@@ -45,7 +45,7 @@ const NavSection = () => {
               color='rgba(36, 51, 125,0.95)'
               fontWeight='500'
               _hover={{
-                'text-decoration': 'underline',
+                'textDecoration': 'underline',
               }}>
               About
             </Text>
