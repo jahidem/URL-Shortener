@@ -7,25 +7,23 @@ const StatsSection = () => {
       w='100%'
       p='10rem 0 7.4rem 0'>
       <Box
-        maxW='850px'
+        maxW={['340px', '650px', '650px']}
         mx='auto'
         py='auto'>
         <Flex justifyContent='center'>
           <Image
+            maxW={['550px', '650px', '650px']}
             position='absolute'
             src={tree}
-            maxW='650px'
             m='-16rem 0 0 0rem'
             opacity='1'
-            
           />
           <Image
             src={statImage}
             boxShadow='10px -10px 45px rgba(245,45,56,0.1)'
-            maxW='650px'
             zIndex='100'
             _hover={{
-              boxShadow :  '10px -10px 45px rgba(245,45,56,0.18)'
+              boxShadow: '10px -10px 45px rgba(245,45,56,0.18)',
             }}
           />
         </Flex>

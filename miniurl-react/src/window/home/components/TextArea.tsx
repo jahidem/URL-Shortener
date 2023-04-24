@@ -73,6 +73,7 @@ const TextArea = () => {
           borderRadius='13px'
           h={currUrlInputState == UrlInputState.SUCCESS ? '128px' : '64px'}
           p='1.6rem'
+          mx='1.6rem'
           bgColor='white'
           justifyContent='space-between'
           alignItems='center'
@@ -119,7 +120,7 @@ const TextArea = () => {
               <Input
                 px='1.8rem'
                 variant='unstyled'
-                placeholder='Paste your URL here to tinify'
+                placeholder='Paste your URL here to Minify'
                 fontSize='1.6rem'
                 bgColor='white'
                 h='100%'
