@@ -7,7 +7,7 @@ const FooterSection = () => {
       justifyContent='space-between'
       p='1rem 2.4rem 1rem 2.4rem'>
       <Box>
-        <Text fontSize={['1.2rem','1.4rem','1.4rem']}>&copy;2023 Jahidem. All rights reserved.</Text>
+        <Text fontSize={['1.2rem','1.4rem','1.4rem']}>&copy;2023 Jahidem</Text>
       </Box>
       <Box>
         <Link
