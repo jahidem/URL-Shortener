@@ -31,7 +31,7 @@ const StatOfMiniurl = ({ miniUrlId, urlPair, setUrlPair }) => {
               <TextWithCopyButton
                 textToShow={urlPair.original_url}
                 textTitle='Your URL'
-                titleWidth='260px'
+                titleWidth={['75px','260px','260px']}
               />
             </Box>
             <Flex
