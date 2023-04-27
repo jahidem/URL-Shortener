@@ -62,3 +62,6 @@ foo@bar:~/URL-Shortener/miniurl$ .\venv\Scripts\activate
 foo@bar:~/URL-Shortener/miniurl$ pip install -r .\requirements.txt
 (venv) foo@bar:~/URL-Shortener/miniurl$ python .\manage.py runserver
 ```
+  
+*N.B.     URL-Shortener/miniurl/static directory contains boilerplate code of django.*
+
